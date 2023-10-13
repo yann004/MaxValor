@@ -3,6 +3,11 @@ package comparaison;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * La classe PlusGrandeValeur est le point d'entrée du programme. Elle permet à l'utilisateur de choisir
+ * entre une ArrayList et une LinkedList pour stocker les données, génère des valeurs aléatoires,
+ * affiche ces valeurs, et détermine la plus grande valeur ainsi que son index.
+ */
 public class PlusGrandeValeur {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

@@ -4,10 +4,18 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-public class LinkedlistGenerat {
-    
-    private List<Integer> donnees = new LinkedList<>();
+/**
+ * La classe LinkedlistGenerat gère un tableau de données utilisant une LinkedList.
+ * Elle génère des valeurs aléatoires, stocke ces valeurs et trouve la plus grande valeur.
+ */
 
+public class LinkedlistGenerat {
+
+    private List<Integer> donnees = new LinkedList<>();
+    
+    /**
+     * Génère des valeurs aléatoires et les ajoute à la liste.
+     */
     public void genererDonnees() {
         Random rand = new Random();
         for (int i = 0; i < 15; i++) {
@@ -15,11 +23,21 @@ public class LinkedlistGenerat {
             donnees.add(nombreAleatoire);
         }
     }
-
+    
+    /**
+     * Récupère la liste de données.
+     *
+     * @return La liste de données.
+     */
     public List<Integer> getDonnees() {
         return donnees;
     }
-
+    
+    /**
+     * Trouve la plus grande valeur dans la liste de données.
+     *
+     * @return La plus grande valeur.
+     */
     public int trouverMaxValeur() {
         int maxValeur = Integer.MIN_VALUE;
         for (int valeur : donnees) {
