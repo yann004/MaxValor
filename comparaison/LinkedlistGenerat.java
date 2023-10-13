@@ -1,13 +1,12 @@
-
 package comparaison;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-public class ArraylistGenerat {
-
-    private List<Integer> donnees = new ArrayList<>();
+public class LinkedlistGenerat {
+    
+    private List<Integer> donnees = new LinkedList<>();
 
     public void genererDonnees() {
         Random rand = new Random();
